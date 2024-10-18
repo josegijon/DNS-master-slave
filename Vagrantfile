@@ -23,6 +23,7 @@ Vagrant.configure("2") do |config|
     #   systemctl reload named
     #   systemctl status named
     # SHELL
+  end
 
     # slave
     config.vm.define "venus" do |venus|
@@ -37,5 +38,5 @@ Vagrant.configure("2") do |config|
       #   systemctl reload named
       #   systemctl status named
       # SHELL
-
+    end
 end
