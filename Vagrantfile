@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
     #   cp -v /vagrant/named /etc/default
     #   cp -v /vagrant/named.conf.options /etc/bind
     #   cp -v /vagrant/named.conf.local.master /etc/bind
-    #   cp -v /vagrant/deaw.test.dns /var/lib/bind
+    #   cp -v /vagrant/tierra.sistema.dns /var/lib/bind
     #   cp -v /vagrant/192.168.57.dns /var/lib/bind
 
     #   systemctl reload named
