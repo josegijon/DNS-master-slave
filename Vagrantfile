@@ -13,16 +13,16 @@ Vagrant.configure("2") do |config|
     tierra.vm.hostname = "tierra.sistema.test"
     tierra.vm.network "private_network", ip: "192.168.57.103"
 
-    # tierra.vm.provision "shell", name: "dns-master", inline: <<-SHELL
+    tierra.vm.provision "shell", name: "dns-master", inline: <<-SHELL
     #   cp -v /vagrant/named /etc/default
     #   cp -v /vagrant/named.conf.options /etc/bind
-    #   cp -v /vagrant/named.conf.local.master /etc/bind
+    #   cp -v /vagrant/named.conf.localmaster /etc/bind
     #   cp -v /vagrant/tierra.sistema.dns /var/lib/bind
     #   cp -v /vagrant/192.168.57.dns /var/lib/bind
 
     #   systemctl reload named
     #   systemctl status named
-    # SHELL
+    SHELL
   end
 
     # slave
@@ -30,13 +30,13 @@ Vagrant.configure("2") do |config|
       venus.vm.hostname = "venus.sistema.test"
       venus.vm.network "private_network", ip: "192.168.57.102"
   
-      # venus.vm.provision "shell", name: "dns-slave", inline: <<-SHELL
-      #   cp -v /vagrant/named /etc/default
+      venus.vm.provision "shell", name: "dns-slave", inline: <<-SHELL
+        cp -v /vagrant/named /etc/default
       #   cp -v /vagrant/named.conf.options /etc/bind
-      #   cp -v /vagrant/named.conf.local.slave /etc/bind
+      #   cp -v /vagrant/named.conf.localslave /etc/bind
   
       #   systemctl reload named
       #   systemctl status named
-      # SHELL
+      SHELL
     end
 end
