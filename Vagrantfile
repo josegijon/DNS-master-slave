@@ -17,8 +17,8 @@ Vagrant.configure("2") do |config|
       cp -v /vagrant/named /etc/default/named
       cp -v /vagrant/named.conf.options /etc/bind
       cp -v /vagrant/named.conf.localmaster /etc/bind/named.conf.local
-      cp -v /vagrant/tierra.sistema.dns /var/lib/bind
-      cp -v /vagrant/192.168.57.dns /var/lib/bind
+      cp -v /vagrant/db.sistema.test /etc/bind
+      cp -v /vagrant/db.57.168.192 /etc/bind
 
       systemctl restart bind9
       systemctl status bind9
