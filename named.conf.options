@@ -24,6 +24,10 @@ options {
 	// you will need to update your keys.  See https://www.isc.org/bind-keys
 	//========================================================================
 	
+	forwarders {
+        208.67.222.222;
+    };
+
 	allow-recursion { red-local; };
 	allow-query { red-local; };
 
