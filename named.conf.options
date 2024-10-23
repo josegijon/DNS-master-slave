@@ -30,8 +30,10 @@ options {
 
 	allow-recursion { red-local; };
 	allow-query { red-local; };
+	allow-transfer { red-local; };
 
 	dnssec-validation yes;
 
 	listen-on-v6 { any; };
+	listen-on { any; };
 };
