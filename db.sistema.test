@@ -5,7 +5,7 @@
 ;
 $TTL	86400
 @	IN	SOA	tierra.sistema.test. admin.sistema.test. (
-			      3		; Serial
+			      4		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -21,3 +21,4 @@ marte		IN	A	192.168.57.104
 
 ns1			IN 	CNAME	tierra.sistema.test.
 ns2			IN 	CNAME	venus.sistema.test.
+mail		IN 	CNAME  	marte.sistema.test.
