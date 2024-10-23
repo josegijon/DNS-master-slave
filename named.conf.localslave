@@ -7,13 +7,13 @@
 //include "/etc/bind/zones.rfc1918";
 
 zone "sistema.test" {
-    type master;
+    type slave;
     file "/var/lib/bind/db.sistema.test";
-    allow-transfer { 192.168.57.102; };  # Permitimos transferencia de zona al esclavo (venus)
+    allow-transfer { 192.168.57.103; };  # Permitimos transferencia de zona al esclavo (venus)
 };
 
 zone "57.168.192.in-addr.arpa" {
-    type master;
+    type slave;
     file "/var/lib/bind/db.57.168.192";
-    allow-transfer { 192.168.57.102; };  # Permitimos transferencia de zona al esclavo (venus)
+    allow-transfer { 192.168.57.103; };  # Permitimos transferencia de zona al esclavo (venus)
 };
