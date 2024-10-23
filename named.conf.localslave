@@ -9,11 +9,11 @@
 zone "sistema.test" {
     type slave;
     file "/var/lib/bind/db.sistema.test";
-    allow-transfer { 192.168.57.103; };  # Permitimos transferencia de zona al esclavo (venus)
+    masters { 192.168.57.103; };  # IP del servidor maestro
 };
 
 zone "57.168.192.in-addr.arpa" {
     type slave;
     file "/var/lib/bind/db.57.168.192";
-    allow-transfer { 192.168.57.103; };  # Permitimos transferencia de zona al esclavo (venus)
+    masters { 192.168.57.103; };  # IP del servidor maestro
 };
