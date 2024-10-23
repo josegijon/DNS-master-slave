@@ -8,12 +8,12 @@
 
 zone "sistema.test" {
     type master;
-    file "/var/lib/bind/db.sistema.test";
+    file "/etc/bind/db.sistema.test";
     allow-transfer { 192.168.57.102; };  # Permitimos transferencia de zona al esclavo (venus)
 };
 
 zone "57.168.192.in-addr.arpa" {
     type master;
-    file "/var/lib/bind/db.57.168.192";
+    file "/etc/bind/db.57.168.192";
     allow-transfer { 192.168.57.102; };  # Permitimos transferencia de zona al esclavo (venus)
 };
