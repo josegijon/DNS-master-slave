@@ -35,8 +35,8 @@ Vagrant.configure("2") do |config|
       #   cp -v /vagrant/named.conf.options /etc/bind
       #   cp -v /vagrant/named.conf.localslave /etc/bind/named.conf.local
   
-         systemctl reload named
-         systemctl status named
+         systemctl restart bind9
+         systemctl status bind9
       SHELL
     end
 end
