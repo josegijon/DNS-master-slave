@@ -8,18 +8,18 @@ Esta práctica consiste en la configuración de un servidor DNS maestro y un ser
 ---
 
 1. [Requisitos Previos](#requisitos-previos)
-2. [Configuración del Servidor DNS Maestro](#configuracion-del-servidor-dns-maestro)
-   - [Archivo db.sistema.test](#1-archivo-dbsistema-test)
+2. [Configuración del Servidor DNS Maestro](#configuración-del-servidor-dns-maestro)
+   - [Archivo db.sistema.test](#1-archivo-dbsistematest)
    - [Archivo db.57.168.192](#2-archivo-db57168192)
-   - [Configuración de named.conf.localmaster](#3-configuracion-de-namedconflocalmaster)
-   - [Configuración de named.conf.options](#4-configuracion-de-namedconfoptions)
-3. [Configuración del Servidor DNS Esclavo](#configuracion-del-servidor-dns-esclavo)
-4. [Verificación y Pruebas](#verificacion-y-pruebas)
-   - [Comprobación de la Resolución de Nombres](#1-comprobacion-de-la-resolucion-de-nombres)
-   - [Comprobación de la Transferencia de Zonas](#2-comprobacion-de-la-transferencia-de-zonas)
-   - [Verificación con nslookup](#3-verificacion-con-nslookup)
+   - [Configuración de named.conf.localmaster](#3-configuración-de-namedconflocalmaster)
+   - [Configuración de named.conf.options](#4-configuración-de-namedconfoptions)
+3. [Configuración del Servidor DNS Esclavo](#configuración-del-servidor-dns-esclavo)
+4. [Verificación y Pruebas](#verificación-y-pruebas)
+   - [Comprobación de la Resolución de Nombres](#1-comprobación-de-la-resolucion-de-nombres)
+   - [Comprobación de la Transferencia de Zonas](#2-comprobación-de-la-transferencia-de-zonas)
+   - [Verificación con nslookup](#3-verificación-con-nslookup)
    - [Logs del Servidor DNS](#4-logs-del-servidor-dns)
-   
+
 ## Requisitos Previos
 
 - Dos máquinas virtuales en una red privada:
