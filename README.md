@@ -4,6 +4,22 @@
 
 Esta práctica consiste en la configuración de un servidor DNS maestro y un servidor DNS esclavo utilizando BIND (Berkeley Internet Name Domain). Se establecen zonas de dominio y se verifica la correcta resolución de nombres y la transferencia de zonas entre ambos servidores.
 
+## Tabla de contenidos:
+---
+
+1. [Requisitos Previos](#requisitos-previos)
+2. [Configuración del Servidor DNS Maestro](#configuracion-del-servidor-dns-maestro)
+   - [Archivo db.sistema.test](#1-archivo-dbsistema-test)
+   - [Archivo db.57.168.192](#2-archivo-db57168192)
+   - [Configuración de named.conf.localmaster](#3-configuracion-de-namedconflocalmaster)
+   - [Configuración de named.conf.options](#4-configuracion-de-namedconfoptions)
+3. [Configuración del Servidor DNS Esclavo](#configuracion-del-servidor-dns-esclavo)
+4. [Verificación y Pruebas](#verificacion-y-pruebas)
+   - [Comprobación de la Resolución de Nombres](#1-comprobacion-de-la-resolucion-de-nombres)
+   - [Comprobación de la Transferencia de Zonas](#2-comprobacion-de-la-transferencia-de-zonas)
+   - [Verificación con nslookup](#3-verificacion-con-nslookup)
+   - [Logs del Servidor DNS](#4-logs-del-servidor-dns)
+   
 ## Requisitos Previos
 
 - Dos máquinas virtuales en una red privada:
@@ -100,7 +116,7 @@ options {
 };
 ```
 
-## Configuración del Servidor DNS Maestro
+## Configuración del Servidor DNS Esclavo
 ### Archivo named.conf.localslave
 En el servidor esclavo, el archivo de configuración define que este es un servidor de zona esclavo:
 ```bash
