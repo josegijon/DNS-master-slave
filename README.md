@@ -155,6 +155,8 @@ dig @192.168.57.103 sistema.test AXFR
 
 El resultado debe mostrar todos los registros de la zona sistema.test, confirmando que se ha realizado correctamente la transferencia.
 
+![AXFR-result](IMG/AXFR-result.png)
+
 ### 3. Verificación con nslookup
 Utiliza el comando nslookup para verificar que los alias y las resoluciones inversas funcionan correctamente:
 ```bash
@@ -167,3 +169,6 @@ Revisa los logs de BIND para verificar si ha habido problemas con la transferenc
 ```bash
 sudo journalctl -xe | grep named
 ```
+
+### 5. Verificación con test.sh
+![AXFR-result](IMG//test-result.png)
