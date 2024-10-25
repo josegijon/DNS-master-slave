@@ -34,6 +34,6 @@ options {
 
 	dnssec-validation yes;
 
-	listen-on-v6 { any; };
+	listen-on-v6 { none; };
 	listen-on { any; };
 };
