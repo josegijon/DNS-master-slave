@@ -19,6 +19,7 @@ Esta práctica consiste en la configuración de un servidor DNS maestro y un ser
    - [Comprobación de la Transferencia de Zonas](#2-comprobación-de-la-transferencia-de-zonas)
    - [Verificación con nslookup](#3-verificación-con-nslookup)
    - [Logs del Servidor DNS](#4-logs-del-servidor-dns)
+   - [Verificación con test.sh](#5-verificación-con-testsh)
 
 ## Requisitos Previos
 
@@ -155,7 +156,7 @@ dig @192.168.57.103 sistema.test AXFR
 
 El resultado debe mostrar todos los registros de la zona sistema.test, confirmando que se ha realizado correctamente la transferencia.
 
-![AXFR-result](IMG/AXFR-result.png)
+![Resultado de transferencia](./img/AXFR-result.png)
 
 ### 3. Verificación con nslookup
 Utiliza el comando nslookup para verificar que los alias y las resoluciones inversas funcionan correctamente:
@@ -171,4 +172,8 @@ sudo journalctl -xe | grep named
 ```
 
 ### 5. Verificación con test.sh
-![AXFR-result](IMG//test-result.png)
+Al ejecutar `test.sh`, se obtuvieron los siguientes resultados:
+
+![Resultados de test.sh](./img//test-result.png)
+
+El resultado muestra que todos los servicios y configuraciones han pasado correctamente las pruebas establecidas.
